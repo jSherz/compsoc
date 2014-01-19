@@ -1,0 +1,145 @@
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "compass/css3/images";
+
+body {
+    background: url(/images/brickwall.png) repeat;
+}
+
+#wrapper {
+}
+
+#header, #who_are_we, #what_we_do, #come_say_hi, #footer {
+    @include row;
+
+    & > div {
+        @include column(12);
+    }
+}
+
+#header {
+    text-align: center;
+
+    #logo {
+        max-width: 300px;
+    }
+
+    h1 {
+        color: #000;
+        font-family: 'Alegreya SC', serif;
+        margin-top: -0.75em;
+
+        .header_lu, .header_cs {
+            display: block;
+        }
+
+        .header_lu {
+            font-size: 0.8em;
+            margin-bottom: -0.5em;
+        }
+
+        .header_cs {
+            font-size: 1.2em;
+        }
+    }
+
+    #social_icons img {
+        margin: 0 10px;
+        display: inline-block;
+        @include transition(0.2s all);
+
+        &:hover {
+            @include opacity(0.4);
+        }
+    }
+}
+
+#who_are_we, #what_we_do, #come_say_hi {
+    h2 {
+        font-family: 'Bowlby One SC', cursive;
+        text-align: center;
+    }
+}
+
+#who_are_we {
+    text-align: center;
+
+    p {
+        text-align: left;
+    }
+
+    .committee_name, .committee_position {
+        font-family: 'Annie Use Your Telescope', cursive;
+        font-weight: bold;
+        letter-spacing: 0.08em;
+    }
+
+    .committee_name {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    .committee_position {
+        font-size: 1.5em;
+    }
+
+    li {
+        display: inline-block;
+        width: 256px;
+        margin: 0 10px;
+        
+        img {
+            padding: 15px;
+            background-color: #fff;
+        }
+    }
+}
+
+#what_we_do {
+    li {
+        @include background-image(linear-gradient(rgba(255, 255, 255, 0), #ccc));
+        border: solid 1px #666;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    h3 {
+        padding-top: 0;
+        font-family: 'Bowlby One SC', cursive;
+    }
+
+    .event_datetime {
+        display: inline-block;
+        float: right;
+        margin-top: -2.7rem;
+    }
+}
+
+#footer {
+    text-align: center;
+
+    p {
+        margin-bottom: 0;
+        font-size: 0.7em;
+        color: #666;
+
+        a {
+            color: #666;
+            text-decoration: underline;
+        }
+    }
+}
+
+.content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+@include respond(all-phones) {
+    #header {
+        #logo {
+            width: 200px;
+        }
+    }
+}
