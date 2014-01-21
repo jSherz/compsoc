@@ -1688,7 +1688,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
-body { background: url(/images/brickwall.png) repeat; }
+body { background: url(/images/dark_wood.png) repeat; }
 
 #header, #who_are_we, #what_we_do, #come_say_hi, #footer { width: 100%; max-width: 980px; min-width: 320px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
 #header > *:first-child, #who_are_we > *:first-child, #what_we_do > *:first-child, #come_say_hi > *:first-child, #footer > *:first-child { margin-left: 0; }
@@ -1698,10 +1698,10 @@ body { background: url(/images/brickwall.png) repeat; }
 
 #header { text-align: center; }
 #header #logo { max-width: 300px; }
-#header h1 { color: #000; font-family: 'Alegreya SC', serif; margin-top: -0.75em; }
+#header h1 { color: #fff; font-family: 'Alegreya SC', serif; margin-top: -0.75em; }
 #header h1 .header_lu, #header h1 .header_cs { display: block; }
 #header h1 .header_lu { font-size: 0.8em; margin-bottom: -0.5em; }
-#header h1 .header_cs { font-size: 1.2em; }
+#header h1 .header_cs { font-size: 1.2em; margin-bottom: -0.3em; }
 #header #social_icons img { margin: 0 10px; display: inline-block; -webkit-transition: 0.2s all; -moz-transition: 0.2s all; -o-transition: 0.2s all; transition: 0.2s all; }
 #header #social_icons img:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; }
 
