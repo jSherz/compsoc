@@ -1,0 +1,31 @@
+#container
+  #container-inner
+    = image_tag 'logo.png', alt: 'Leeds CompSoc', title: 'Leeds CompSoc'
+
+    %ul
+      %li
+        = link_to 'https://www.facebook.com/groups/LU.CompSoc/', title: 'Leeds CompSoc on Facebook' do
+          %i.fa.fa-facebook-square
+
+      %li
+        = link_to 'https://twitter.com/leedscompsoc', title: 'Leeds CompSoc on Twitter' do
+          %i.fa.fa-twitter-square
+
+      %li
+        = link_to 'https://steamcommunity.com/groups/LeedsCompSoc', title: 'Leeds CompSoc on Steam' do
+          %i.fa.fa-steam-square
+
+    %p
+      Want to join?
+      = link_to 'https://www.luu.org.uk/groups/compsoc/' do
+        Visit us on the Leeds University Union page.
+
+#footer
+  #footer-inner
+    %p
+      Hosted by
+      = succeed '.' do
+        = link_to 'jSherz', 'http://jsherz.com'
+      %i.fa.fa-github
+      = succeed '.' do
+        = link_to 'Fork me', 'https://github.com/jSherz/compsoc'
